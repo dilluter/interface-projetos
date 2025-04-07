@@ -1,0 +1,40 @@
+/* Estilos da página index.html */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 20px;
+  }
+  
+  .titulo {
+    color: #003366;
+    font-size: 32px;
+  }
+  
+  .botao-ir {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Estilos da página formulario.html */
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 500px;
+  }
+  
+  fieldset {
+    border: 1px solid #003366;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #003366;
+  }
+  
