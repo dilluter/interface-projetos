@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+<link rel="" type="text/css" href="style.css">
+</head>
+<body>
+<style>
+
+</style>
+<script>
+    
+</script>
+
+    <!--Formulário-->
+    <h2 align="center">Fomulário</h2>
+    <form action="arquivo.sql" method="post">
+        <p>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" size="60"/></p>
+        <p>Telefone: <input type="tel" placeholder="DDD-00000-0000" maxlength="11"/></p>
+        <p>Data de Nascimento: <input type="date"/></p>
+        <p>Senha: <input type="password" maxlength="8"/></p>
+        <p>Email: <input type="email"/></p>
+        <p>Idade: <input type="number"/></p>
+        <p>comentarios
+            <br>
+            <textarea rows="15" cols=25></textarea>
+        </p>
+        <p> Estado De Nascimento
+            <br>
+<input type="radio" name  = "ESTADOS" value="GO"/>GO
+<br>
+<input type="radio" name  = "ESTADOS" value="SP"/>SP
+<br>
+<input type="radio" name  = "ESTADOS" value="DF"/>DF
+<p>paises:
+<select>
+<option></option>
+
+<option value="COLOMB">COLOMB</option>
+<option value="EUA">EUA</option>
+<option value="ARG">ARG</option>
+<option value="ENG">ENG</option>
+
+</select>
+<P>
+    <input type="checkbox"/>aceito os termos
+</P>
+<input type="reset" value="limpar"/>
+</p>
+<input type="submit"value="enviar"/>
+        </p>
+<p>
+<fieldset>
+<legend>Dados pessoais</legend>
+<label>nome: <input type="text"name= "texto"></label>
+<br>
+<label>cpf:  <input type="text" name="cpf"/></label>
+
+</fieldset>
+
+</p>
+
+    </form>
+</body>
+</html>
