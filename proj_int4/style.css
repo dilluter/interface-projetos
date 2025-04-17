@@ -1,177 +1,177 @@
 /* Reset e estilo básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, p {
-    margin-bottom: 1rem;
-  }
-  
-  /* Menu */
-  .menu {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cores de fundo por página */
+.bg-index {
+  background-color: #f9f9f9;
+}
+
+.bg-pagina1 {
+  background-color: #ffe4e1;
+}
+
+.bg-pagina2 {
+  background-color: #e6f7ff;
+}
+
+.bg-pagina3 {
+  background-color: #fffbe6;
+}
+
+.bg-pagina4 {
+  background-color: #e6ffe6;
+}
+
+h1, h2, p {
+  margin-bottom: 1rem;
+}
+
+/* Menu */
+.menu {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+  color: #0099cc;
+  transform: translateY(-5px);
+}
+
+.menu .logo {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  color: #0099cc;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Entrada */
+.entrada {
+  background-image: url('imagens/entrada.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.entrada h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Main content */
+main {
+  padding: 40px;
+  background-color: #fff;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+main h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  color: #0099cc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
   .menu ul {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .menu a:hover {
-    color: #0099cc;
-    transform: translateY(-5px);
-  }
-  
-  .menu .logo {
-    font-family: 'Lobster', cursive;
-    font-size: 2rem;
-    color: #0099cc;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  /* Backgrounds diferentes */
-  .bg-index {
-    background-color: #f9f9f9;
-  }
-  
-  .bg-pagina1 {
-    background-color: #ffe4e1;
-  }
-  
-  .bg-pagina2 {
-    background-color: #e6f7ff;
-  }
-  
-  .bg-pagina3 {
-    background-color: #fffbe6;
-  }
-  
-  .bg-pagina4 {
-    background-color: #e6ffe6;
-  }
-  
-  /* Entrada */
-  .entrada {
-    background-image: url('imagens/entrada.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-family: 'Lobster', cursive;
-    color: #fff;
-    font-size: 3rem;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-    text-align: center;
   }
-  
+
+  .menu a {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
   .entrada h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
-  
-  /* Main content */
-  main {
-    padding: 40px;
-    background-color: #fff;
-    max-width: 900px;
-    margin: 30px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #333;
-    text-align: justify;
-  }
-  
-  main h2 {
-    font-family: 'Lobster', cursive;
     font-size: 2.5rem;
-    color: #0099cc;
-    margin-bottom: 20px;
-    text-align: center;
   }
-  
-  main p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    color: #555;
+
+  main {
+    padding: 20px;
+    font-size: 1rem;
   }
-  
-  img {
-    max-width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    font-size: 0.9rem;
-  }
-  
-  /* Media queries para responsividade */
-  @media (max-width: 768px) {
-    .menu ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .menu a {
-      font-size: 1rem;
-      margin: 10px 0;
-    }
-  
-    .entrada h1 {
-      font-size: 2.5rem;
-    }
-  
-    main {
-      padding: 20px;
-      font-size: 1rem;
-    }
-  }
+}
+
   
